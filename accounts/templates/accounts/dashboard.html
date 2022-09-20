@@ -1,0 +1,44 @@
+{% extends 'accounts/main.html' %} {% block content %}
+{% include 'accounts/status.html' %}
+
+<div class="row">
+  <div class="col-md-5">
+    <h5>CUSTOMERS</h5>
+    <hr />
+    <div class="card text-white">
+      <a class="btn btn-primary btn-sm btn-block" href="">CREATE CUSTOMER</a>
+      <table class="table table-striped-sm">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+  <!-------ORDER ROW-------->
+  <div class="col-md-7">
+    <h5>ORDERS</h5>
+    <hr />
+    <div class="card text-white">
+      <a class="btn btn-primary btn-sm btn-block" href="">CREATE ORDER</a>
+      <table class="table table-striped-sm">
+        <thead>
+          <tr>
+            <th>Customers Name</th>
+            <th>Product</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+</div>
+  
+
+{% endblock %}
