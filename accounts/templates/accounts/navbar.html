@@ -1,9 +1,7 @@
 {% load static %}
 <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="javascript:void(0)"
-      ><img src="{% static 'images/reg1.jpg' %}" alt=""
-    /></a>
+    <a class="navbar-brand" href="javascript:void(0)">CUSTOMER CRM</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -15,13 +13,10 @@
     <div class="collapse navbar-collapse" id="mynavbar">
       <ul class="navbar-nav me-auto">
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Dashboard</a>
+          <a class="nav-link" href="{% url 'home' %}">Dashboard</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Products</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="javascript:void(0)">Customers</a>
+          <a class="nav-link" href="{% url 'products' %}">Products</a>
         </li>
       </ul>
       <form class="d-flex">
@@ -31,5 +26,3 @@
     </div>
   </div>
 </nav>
-
-<hr />

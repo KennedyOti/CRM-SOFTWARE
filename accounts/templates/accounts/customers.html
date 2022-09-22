@@ -1,5 +1,71 @@
-{% extends 'accounts/main.html' %} {% block content %}
+{% extends 'accounts/main.html' %} {% block content %} <br /><br />
+<div class="row">
+  <div class="col">
+    <div class="card border-success mb-3" style="max-width: 30rem">
+      <div class="card-header">CUSTOMER</div>
+      <div class="card-body">
+        <button type="button" class="btn btn-outline-primary" style="width: 100%;">Update Customer</button><br><br>
+        <button type="button" class="btn btn-outline-danger" style="width: 100%;">Delete Customer</button>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-success mb-3" style="max-width: 30rem">
+      <div class="card-header">CUSTOMER INFORMATION</div>
+      <div class="card-body">
+        <p class="card-text">
+          <p class="info-text">Customer Name: {{customer.name}}</p>
+          <p class="info-text">Phone Number:{{customer.phone}}</p>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card border-success mb-3" style="max-width: 30rem">
+      <div class="card-header">TOTAL ORDERS</div>
+      <div class="card-body">
+        <p class="info-text" style="font-size: 3rem; text-align:center;">
+          {{orders_count}}
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 
-<p>Customers</p>
+<div class="row" id="search-row">
+  <form class="d-flex">
+    <input class="form-control me-2" type="text" placeholder="Search" />
+    <button class="btn btn-primary" type="button">Search</button>
+  </form>
+</div>
 
+<div class="row">
+  <div class="container mt-3" style="text-align: center">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Product</th>
+          <th>Category</th>
+          <th>Date Ordered</th>
+          <th>Status</th>
+          <th>Update</th>
+          <th>Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+
+        {% for order in orders %}
+        <tr>
+          <td>{{order.product}}</td>
+          <td>{{order.product.category}}</td>
+          <td>{{order.date_created}}</td>
+          <td>{{order.status}}</td>
+          <td><a href="" class="btn btn-info">Update</a></td>
+          <td><a href="" class="btn btn-danger">Delete</a></td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
 {% endblock %}

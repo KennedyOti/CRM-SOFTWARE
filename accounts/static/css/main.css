@@ -1,0 +1,48 @@
+body {
+  background: #f0f0f0;
+}
+.dash-status {
+  margin: 20px;
+}
+.nav-link {
+  color: #fff;
+}
+
+#customer-card {
+  background: rgb(136, 116, 25);
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+
+#products-card {
+  background: rgb(57, 199, 21);
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+#dorders-card {
+  background: rgb(8, 102, 165);
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+#porders-card {
+  background: rgb(226, 53, 10);
+  color: #fff;
+  border-radius: 5px;
+  text-align: center;
+}
+.row {
+  margin: auto;
+}
+
+#search-row {
+  width: 100%;
+  padding: 20px;
+  background: #e9e3e3f5;
+}
+
+.info-text {
+  font-weight: bold;
+}

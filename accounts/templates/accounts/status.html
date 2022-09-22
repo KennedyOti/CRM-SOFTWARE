@@ -1,54 +1,46 @@
 <br />
 
-<div class="row">
+<div class="row" id="dash-status">
   <div class="col">
-    <div class="col-md">
-      <div class="car-text-center text-white mb-3" id="deliverd-text">
-        <div class="car-header">
-          <h5 class="car-title">Orders Deliverd</h5>
-        </div>
-        <div class="card-body">
-          <h3 class="car-title"></h3>
-        </div>
+    <div class="card text-white bg-success mb-3" style="max-width: 22rem">
+      <div class="card-header">TOTAL CUSTOMERS</div>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 3rem; font-weight: bold">
+          {{total_customers}}
+        </p>
       </div>
     </div>
   </div>
 
   <div class="col">
-    <div class="col-md">
-      <div class="car-text-center text-white mb-3" id="deliverd-text">
-        <div class="car-header">
-          <h5 class="car-title">Orders Deliverd</h5>
-        </div>
-        <div class="card-body">
-          <h3 class="car-title"></h3>
-        </div>
+    <div class="card text-white bg-info mb-3" style="max-width: 22rem">
+      <div class="card-header">TOTAL PRODUCTS</div>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 3rem; font-weight: bold">
+          {{total_products}}
+        </p>
       </div>
     </div>
   </div>
 
   <div class="col">
-    <div class="col-md">
-      <div class="car-text-center text-white mb-3" id="deliverd-text">
-        <div class="car-header">
-          <h5 class="car-title">Orders Deliverd</h5>
-        </div>
-        <div class="card-body">
-          <h3 class="car-title"></h3>
-        </div>
+    <div class="card text-white bg-warning mb-3" style="max-width: 22rem">
+      <div class="card-header">TOTAL ORDERS</div>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 3rem; font-weight: bold">
+          {{total_orders}}
+        </p>
       </div>
     </div>
   </div>
 
   <div class="col">
-    <div class="col-md">
-      <div class="car-text-center text-white mb-3" id="deliverd-text">
-        <div class="car-header">
-          <h5 class="car-title">Orders Deliverd</h5>
-        </div>
-        <div class="card-body">
-          <h3 class="car-title"></h3>
-        </div>
+    <div class="card text-white bg-secondary mb-3" style="max-width: 22rem">
+      <div class="card-header">Header</div>
+      <div class="card-body">
+        <p class="card-text" style="font-size: 3rem; font-weight: bold">
+          {{pending_orders}}
+        </p>
       </div>
     </div>
   </div>
