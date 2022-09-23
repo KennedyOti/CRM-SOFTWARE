@@ -16,7 +16,7 @@
           </tr>
           {% for customer in customers %}
           <tr>
-            <td><a class="btn btn-primary" href="{% url 'customers' customer.id %}">View Profile</a></td>
+            <td><a class="btn btn-sm btn-primary" href="{% url 'customers' customer.id %}">View Profile</a></td>
             <td>{{customer.name}}</td>
             <td>{{customer.phone}}</td>
             <td>{{customer.date_created}}</td>
@@ -32,7 +32,7 @@
     <h5>ORDERS</h5>
     <hr />
     <div class="card text-white">
-      <a class="btn btn-dark btn-sm btn-block" href="">CREATE ORDER</a>
+      <a class="btn btn-dark btn-sm btn-block" href="{% url 'create_order' %}">CREATE ORDER</a>
       <table class="table table-striped-sm">
         <thead>
           <tr>
@@ -50,8 +50,8 @@
             <td>{{order.product}}</td>
             <td>{{order.date_created}}</td>
             <td>{{order.status}}</td>
-            <td><a href="" class="btn btn-info">Update</a></td>
-            <td><a href="" class="btn btn-danger">Delete</a></td>
+            <td><a href="{% url 'update_order' order.id %}" class="btn btn-sm btn-info">Update</a></td>
+            <td><a href="{% url 'delete_order' order.id %}" class="btn btn-sm btn-danger">Delete</a></td>
           </tr>
           {% endfor %}
         </thead>
